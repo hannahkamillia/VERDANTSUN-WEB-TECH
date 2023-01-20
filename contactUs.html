@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--Contact Us page by Afruma Parvin(2022776) edited by Hannah Kamillia(2113570)--->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+  }
+  .header{/*headermain*/
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/dolph.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    /*
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items: center;*/
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    padding: 0px 0;
+    z-index: 12;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{/*nav list style*/
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6C2327 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  
+  }
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ede3d9;
+  }
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+  .contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/fresh.jpg');
+    background-size : cover;
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact .content h2
+  {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+  }
+  .contact .content p
+  {
+    font-weight: 500;
+    color: #fff;
+  }
+  .container
+  {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+
+  }
+  .container .contactInfo
+  {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+  }
+  .container .contactInfo .box
+  {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+  }
+  .container .contactInfo .box .icon
+  {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+  }
+  .contactForm h2
+  {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+  .contactForm .inputBox
+  {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input,
+  .contactForm .inputBox textarea
+  {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span
+  {
+    color: #6C2327;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contactForm .inputBox input [type="submit"]
+  {
+    width: 100px;
+    background:#6C2327;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .send-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+
+  }
+  .send-btn:hover{
+    border: 1px solid #fff ;
+    background:#6C2327;
+    transition: 1s;
+    color: #fff;
+  }
+
+  </style>
+  <body>
+    <nav>
+      <a href="verdant.html"><img src="images/verdantlogo.png"></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="aboutUs2.html">ABOUT US</a></li>
+          <li><a href="volunteer.html">VOLUNTEER</a></li>
+          <li><a href="">CONTACT US</a></li>
+          <li><a href="donation.html">DONATION</a></li>
+
+        </ul>
+  </div>
+    </nav>
+
+    <section class="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>Do one thing today to help protect the world's wildlife.</p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Office Address</h3>
+                <p>Gombak,53100,Selangor</p>
+                </div>
+              </div>
+              <div class="box">
+                  <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                  <div class="text">
+                    <h3>Phone</h3>
+                    <p>+6018-9924783</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>TheVerdantSun@gmail.com</p>
+                </div>
+             </div>
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                      <h3>Business Hours</h3>
+                      <p>Monday - Thursday <br> 10:00 A.M - 4:00 P.M</p>
+                    </div>
+                </div>
+          </div>
+
+          <div class="contactForm">
+          <form>
+            <h2>Send Messages to Us!</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Your Subject</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Write Your Message..</span>
+            </div>
+            <div class="inputBox">
+            <!--  <input type="submit" class="send-btn" name="" value="Send">-->
+              <a href="sent.html" class="send-btn">Send</a>
+              <!---<button onclick="thankyou()"type="button" class="msgBtn"name="button">Send</button>--->
+            </div>
+            </form>
+      </div>
+  </div>
+
+  </section>
+  <!--Footer-->
+  <section class="footer">
+    <h4>The future of our wildlife is in our hands</h4>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-youtube"></i>
+      <p>Made with <i class="fa fa-heart-o"></i> by Marmalade</p>
+
+      </div>
+      </section>
+
+  </body>
+</html>

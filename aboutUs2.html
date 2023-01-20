@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<!--About Us Page created by Nursyahira(2115912)--->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="about_us.css"> -->
+  </head>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+  }
+  .header{/*headermain*/
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('images/forest-home.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+  }
+  nav{
+    /*
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items: center;*/
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    padding: 0px 0;
+    z-index: 12;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{/*nav list style*/
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6C2327 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+    /*
+    background: #7FB3D5;
+    margin: auto;
+    transition: 0.5s;*/
+  }
+
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  background-color: #ede3d9;
+  }
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+
+  /* ABOUT US CSS*/
+  .aboutus-page{
+    /* min-height: 100vh; */
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F4;
+    background-position: center;
+    background-size:auto;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+
+  }
+  .mainau{
+    flex-basis: 48%;
+    padding: 0px 0px;
+    text-align: center;
+
+  }
+  .mainau img{
+    width: 100%;
+    height: 78vh;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+  .mainau h1{
+    padding-top: 0;
+  }
+  .mainau p{
+    padding: 15px 0 25px;
+  }
+
+  .aboutus{
+    font-size : 38px;
+    color: white;
+    margin-left: 5%;
+  }
+
+  .all{
+    width : 100%;
+    height: 100%;
+    background-color: #EFE7DF;
+    margin-bottom: -38px;
+
+  }
+  .pic1{
+    position: relative;
+    width: 100%;
+    padding: 0px 0;
+    /* max-width: 1250px; */
+    padding-top: 10%;
+    width: 100%;
+    height: 500px;
+
+    top: 60%;
+    left: 0%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 0 0px;
+
+    border: 1px solid #7F7E64;
+    background-color: #7F7E64;
+    /* width: 1360px; */
+    justify-content: space-between;
+
+  }
+  .pic1 img{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 35%;
+    right: 3%;
+    align-items: center;
+  padding: 20px 20px;
+  float: right;
+  margin-right: 3%;
+  border-radius: 28px 28px 28px 28px;
+
+    /* width: 240px;
+    height: 170px;
+    align-items: center;
+  padding: 20px 20px; */
+  }
+
+  .text1 p{
+    color: #222020;
+    position: absolute;
+    top: 56%;
+    left: 5%;
+    font-family:sans-serif;
+    font-size: 18px;
+    /* transform: translate(-50%,-50%); */
+    text-align: justify;
+
+
+    border: 1px solid #7F7E64;
+    background-color:#7F7E64;
+    width: 760px;
+    justify-content: space-between;
+
+  }
+
+  .pic2{
+    position: relative;
+    width: 100%;
+    padding: 0px 0;
+    /* max-width: 1250px; */
+
+    top: 60%;
+    left: 0%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 0 0px;
+
+    /* width: 1360px; */
+    height: 350px;
+    justify-content: space-between;
+
+  }
+  .pic2 img{
+    width: 300px;
+    height: 250px;
+    align-items: center;
+  padding: 20px 20px;
+  float: left;
+  margin-left: 3%;
+  border-radius: 28px 28px 28px 28px;
+  }
+
+  .text2 p{
+    color: black;
+    position: absolute;
+    top: 72%;
+    right: 5%;
+    font-size: 18px;
+    /* transform: translate(-50%,-50%); */
+    color: #525149;
+
+    text-align: justify;
+
+    width: 760px;
+    justify-content: space-between;
+  }
+  .text2 h2{
+    color: grey;
+    position: absolute;
+    top: 66%;
+    right: 5%;
+    font-size: 32px;
+    font-family: sans-serif;
+    /* transform: translate(-50%,-50%); */
+    text-align: justify;
+
+    width: 760px;
+    justify-content: space-between;
+  }
+</style>
+  <body>
+<section class="aboutus-page">
+      <nav>
+        <a href="verdant.html"><img src="images/verdantlogo.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutUs2.html">ABOUT US</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+            <li><a href="donation.html">DONATION</a></li>
+
+          </ul>
+</div>
+      </nav>
+
+
+    <div class="mainau">
+
+      <a href=""><img src="images/forest-home.jpg"></a>
+      </div>
+
+
+        </div>
+      <div class = "pic1">
+        <div class="aboutus">
+          <a href=""><img src="images/bird.jpg"></a>
+         <br><br><br><p>About Us</p>
+         <br><p>Save The Wildlife. You can do it too.</p></div>
+          <div class ="text1">
+          <p>VerdantSun is a team that organize the wildlife conservation.
+          In this organization, we collect the donations from the people
+          from any party whether it is from media social, public area, school
+          and any large manufactures. Any people can join our team and be as a
+          volunteering that we will together commit to raise awareness of all of
+          people and donation in relation to Sustainable Goal Development,
+          Goal 15 which are Life on Land. </p>
+</div>
+</div>
+
+
+        <div class = "pic2">
+          <br>  <a href=""><img src="images/elephant.jpg"></a></div>
+            <div class ="text2">
+
+              <h2>Earth without wildlife is life without <br>beautiful things.</h2>
+
+            <p>VerdantSun also functions as distributor from the donation that we received.
+            We start an organization that focuses on the importance of sustaining and
+            protecting wildlife. Verdant Sun is a non-profit organization that has a vision
+            to preserve the wildlife and sustain the ecosystem. In relation to SDG, Goal 15
+            we decided to create a platform where we can promote our vision and mission to
+            the world regarding the importance of preserving wildlife.</p>
+
+          </div>
+
+
+<br><br>
+        <section class="footer">
+      <h4>The future of our wildlife is in our hands</h4>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+        <p>Made with <i class="fa fa-heart-o"></i> by Marmalade</p>
+      </div>
+      </section>
+
+    </section>
+
+
+  </body>
+</html>

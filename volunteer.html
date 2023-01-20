@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--Volunteer Page created by Aiyani(2113162)--->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="verdant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="volunteerHeader">
+      <nav>
+        <a href="verdant.html"><img src="images/verdantlogo.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutUs2.html">ABOUT US</a></li>
+            <li><a href="">VOLUNTEER</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+            <li><a href="donation.html">DONATION</a></li>
+
+          </ul>
+</div>
+      </nav>
+      <!--
+      <div class="text-box">
+        <h1>Wonder of the World</h1>
+        <p>Help us create a better world for the wildlife</p>
+        <a href="" class="visit-btn">Visit us</a>
+        </div>
+      -->
+
+    </section>
+<!---volunteer------->
+<section>
+  <div class="aim">
+    <br>
+
+    <span class="material-symbols-outlined">
+pets
+</span>
+<span class="material-symbols-outlined">
+eco
+</span>
+<span class="material-symbols-outlined">
+public
+</span>
+    <br><br>
+
+
+
+
+
+    <p class="aimBox">Nature disaster has always been a hot topic in our daily life owning to the fact that the contribution of human activities has lead to the fall of the wildlife. Our aim is to conserve the nature for a greater future</p>
+
+  </div>
+</section>
+
+<!--event-->
+
+<section class="programme">
+  <h1 class="programmeBox">PROGRAMME</h1>
+  <div class="row">
+    <div  class="programme-col">
+
+      <img src="images/recycle.png" alt=""
+      width=150
+      height=170>
+      <div class="layer">
+        <h3>Go! recycle</h3>
+      </div>
+      </div>
+      <div  class="programme-col">
+
+        <img src="images/wild.png" alt=""
+        width=150
+        height=170>
+        <div class="layer">
+          <h3>Save Wildlife</h3>
+        </div>
+        </div>
+        <div  class="programme-col">
+
+          <img src="images/green.png" alt=""
+          width=150
+          height=170>
+          <div class="layer">
+            <h3>Go! Greenspace</h3>
+          </div>
+          </div>
+
+  </div>
+
+<a href="event.html" class="visit-btn red-btn">Learn More</a>
+<!--Form-->
+</section>
+<section class="form">
+  <h1>COME AND JOIN US!</h1>
+  <form class="volunteerForm" action="" method="post">
+<br><br>
+      <label for="name">Name :</label>
+      <input type="text" name="txtName" placeholder="Enter your name">
+
+
+      <br><br>
+      <label for="name">Email :</label>
+      <input type="email" name="txtName" placeholder="Enter your email">
+      <br><br>
+      <label for="name">Phone :</label>
+      <input type="text" name="txtName" placeholder="Enter your phone number">
+      <br><br>
+      <label for="name">Event :</label>
+      <select id="event" name="event">
+  <option>Go! recycle</option>
+  <option selected>Save Wildlife</option>
+  <option>Go! Greenspace</option>
+
+</select>
+<br><br>
+<button class="signUp" type="button" name="button">Sign up</button><br><br>
+
+  </form>
+
+</section>
+<!--Footer-->
+<section class="footer">
+  <h4>The future of our wildlife is in our hands</h4>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+<p>Made with <i class="fa fa-heart-o"></i> by Marmalade</p>
+</div>
+
+    </section>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+<script >
+$(document).ready(function() {
+      $(".signUp").click(function() {
+
+          // Here the value is stored in variable.
+          var x = $("input:text").val();
+
+
+          if(x=="" ){
+            alert("Please fill in the form");
+            return false;
+          }
+
+
+          else
+          alert("congratulation " + x + " you have successfully join our programme")
+
+
+
+
+      });
+
+  });
+</script>
+
+  </body>
+</html>

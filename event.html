@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--Programme Page created by Aiyani(2113162)--->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <style media="screen">
+  *{
+    margin:0;
+    padding:0;
+      font-family: 'Poppins',sans-serif;
+  }
+
+  .eventHeader{
+
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  }
+  nav{
+    /*
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items: center;*/
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    padding: 0px 0;
+    z-index: 12;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+    height: 100px;
+  }
+  nav img{
+    width: 150px;
+
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{/*nav list style*/
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6C2327;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+
+  }
+
+  /*
+  .carousel {
+    margin-bottom: 4rem;
+  }*/
+  #sdgHeader{
+    padding-right: 32%;
+  }
+.sdg{
+text-align: center;
+  padding-top: 3%;
+  padding-left: 24%;
+  padding-bottom: 3%;
+}
+#sdgimg{
+  padding-left:7%
+}
+  .wild{
+    background-color: #7F7E64;
+    width: 100%;
+    height: 550px;
+
+  }
+  .recycle{
+    background-color: #fff;
+    width: 100%;
+    height: 550px;
+
+  }
+  .green{
+    background-color: #7F7E64;
+    width: 100%;
+    height: 550px;
+
+  }
+
+  .row2{
+    display: flex;
+    justify-content: space-between;
+  }
+  .wild-img{
+
+    padding-top: 60px;
+    padding-left: 5%;
+    padding-right: 12%;
+
+  }
+  .recycle-img{
+
+    padding-top: 70px;
+    padding-left: 12%;
+
+
+
+  }
+  .green-img{
+
+    padding-top: 60px;
+    padding-left: 5%;
+    padding-right: 12%;
+  }
+
+  .text1{
+    text-align: justify;
+    width: 90%;
+    height: 30%;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 20%;
+    color: #E1E4EB;
+
+  }
+  .text2{
+    text-align: justify;
+    width: 90%;
+    height: 30%;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 10%;
+    color: #525149;
+
+
+  }
+
+
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ede3d9;
+
+  }
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+  }
+
+
+
+
+  </style>
+  </head>
+  <body>
+    <!--navigation-->
+    <section class="eventHeader">
+      <nav>
+        <a href="verdant.html"><img src="images/verdantlogo.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutUs2.html">ABOUT US</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+            <li><a href="donation.html">DONATION</a></li>
+
+          </ul>
+</div>
+      </nav>
+      <!--
+      <div class="text-box">
+        <h1>Wonder of the World</h1>
+        <p>Help us create a better world for the wildlife</p>
+        <a href="" class="visit-btn">Visit us</a>
+        </div>
+      -->
+<!--carousel-->
+    </section>
+    <section class="eventCarousel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/lion.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Save The wild</h5>
+        <p>The future is in your hand.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/book.jpg"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Reduce ,Reuse,Recycle</h5>
+        <p>Be the change you want to see in the world.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/elephant1.jpg"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Be Brave and Save Wildlife</h5>
+        <p>Live and let them live too.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </section>
+    <!--sdg-->
+<section class="sdg">
+  <div class="container">
+    <h1 id="sdgHeader">Sustainable Development Goals</h1>
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img id="sdgimg"src="images/sdg15.png" alt="" width="170" height="140">
+
+        <h2 class="fw-normal">Life On Land</h2>
+        <p>Save, rehabilitate, and encourage sustainable use of terrestrial ecosystems.</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img id="sdgimg" src="images/sdg13.png" alt="" width="170" height="140">
+
+
+        <h2 class="fw-normal">Climate Action</h2>
+        <p>Planting trees can help in combation climate action.</p>
+
+      </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+</section>
+
+<!--about Programme-->
+    <section class="wild">
+
+      <div class="row2">
+        <div class="text1">
+          <h2 class="featurette-heading fw-normal lh-1">Save The Wildlife. <span class="text-muted">You can do it too.</span></h2>
+          <p >Our aims to protect the wildlife that has been endangered humans and environmental changes due to climate changes.The white and larger one-horned rhinos, some populations of African elephants, mountain gorillas, giant pandas, and tigers are just a few of the iconic animals that our fieldwork has helped save from extinction over the past 50 years.Our efforts have assisted thousands of species by aiding in the protection of all the diversity of life within their ecosystems, not just a few particular species of wildlife who now have a more secure future.The improvement of livelihoods, food security, access to clean water, incomes, and the social and political stability of communities are all direct benefits of our work to conserve wildlife.
+</p>
+
+        </div>
+        <div class="wild-img">
+          <img src="images/wild.png" alt=""
+          width="300"
+          height="250">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="recycle">
+     <div class="row2">
+
+       <div class="recycle-img">
+         <img src="images/recycle.png" alt=""
+         width="300"
+         height="250">
+
+        </div>
+        <div class="text2">
+          <br>
+          <h2>Go! Recycle </h2>
+          <br>
+          <p >The pupose of our recycling programme is to make sure the environment is clean and lessens the quantity of waste that is disposed of in landfills and incinerators.Both the depletion of natural resources and the rapid filling of landfills are current global issues. The way we produce, consume, and dispose of waste now is no longer sustainable. Everyone, from small businesses to major enterprises, needs to reconsider their perspectives on how to dispose of waste. We can all help to safeguard the environment, conserve natural resources, and maintain the world for future generations by cutting down on the amount of waste we produce and recycling what we already have.</p>
+
+        </div>
+
+     </div>
+
+
+
+   </section>
+
+<section class="green">
+  <div class="row2">
+    <div class="text1">
+      <h2 class="featurette-heading fw-normal lh-1">Go!Green. <span class="text-muted">Save the earth.</span></h2><br>
+      <p >The initiative of this programme is to counter the issues of climate changes. Additionally, planting trees can contribute to the creation of cool, clean air. As carbon dioxide is absorbed by the trees, the air temperature and heat are likewise reduced. This implies that trees can improve the air we breathe by purifying it.
+Wildlife relies on the trees as well. Animals seek for trees as a location of safety, food, and refuge. Deforestation has caused the extinction of numerous creatures. In addition, trees help prevent natural disasters like floods, landslides, and drought. </p>
+
+    </div>
+    <div class="green-img">
+      <img src="images/green.png" alt=""
+      width="300"
+      height="250">
+
+    </div>
+  </div>
+
+
+</section>
+<!--Footer-->
+<section class="footer">
+  <h4>The future of our wildlife is in our hands</h4>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-youtube"></i>
+      <p>Made with <i class="fa fa-heart-o"></i> by Marmalade</p>
+
+
+    </section>
+
+
+
+
+
+  </body>
+</html>

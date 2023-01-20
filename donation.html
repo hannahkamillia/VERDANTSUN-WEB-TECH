@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--Donation Page created by Che Hasbullah(1911921) edited by Aiyani(2113162)--->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+
+    *{
+      margin:0;
+      padding:0;
+        font-family: 'Poppins',sans-serif;
+    }
+    .header{
+      min-height: 14vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    nav{
+      /*
+      display: flex;
+      padding: 2% 6%;
+      justify-content:space-between;
+      align-items: center;*/
+      position: fixed;
+      background: #fff;
+      width: 100%;
+      padding: 0px 0;
+      z-index: 12;
+      max-width: 1250px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 100px;
+    }
+    nav img{
+      width: 150px;
+
+    }
+    .nav-links{
+      flex: 1;
+      text-align: right;
+    }
+    .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+    .nav-links ul li a{/*nav list style*/
+      color: black;
+      text-decoration: none;
+      font-size: 13px;
+
+
+    }
+    .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #6C2327;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+      width: 100%;
+
+    }
+    .donate{
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      background-image: url('images/forest.jpg');
+      background-size:cover;
+      height: 500px;
+
+    }
+
+    .donateForm{
+      text-align: center;
+
+
+
+      background-color: #efe9dc;
+      width: 380px;
+      height: 360px;
+
+      margin:auto ;
+      margin-top:20px;
+      border: 10px solid #c5b698;
+
+
+    }
+
+    button{
+      margin: 0,auto;
+    }
+    .Donation-button-bar button:hover {
+  background-color: #7BC6F1;
+}
+.donateBtn{
+  background-color: #6C2327;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #6C2327;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ede3d9;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa{
+  color: black;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- navigation bar-->
+    <section class="header">
+      <nav>
+        <a href="verdant.html"><img src="images/verdantlogo.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutUs2.html">ABOUT US</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+            <li><a href="">DONATION</a></li>
+
+          </ul>
+  </div>
+      </nav>
+
+
+    </section>
+    <!-- donate form-->
+    <section class="donate">
+      <br><br><br><br><br><br><br>
+      <section class="donateForm">
+        <div class="main">
+          <div class="center-now">
+
+
+            <h2 >Donate Here</h2><br>
+            <div class="Donation-button-bar">
+            <button onclick="input1()"id="1"value="5">Rm 5</button>
+            <button onclick="input2()"id="2"value="10">Rm 10</button>
+            <button onclick="input3()"id="3"value="20">Rm 20</button>
+            <button onclick="input4()"id="4"value="30">Rm 30</button>
+            <button onclick="input5()"id="5"value="40">Rm 40</button>
+            <button onclick="input6()"id="6"value="50">Rm 50</button><br><br>
+            </div>
+        <input type="text" name="" id="myText" value="" placeholder="Enter Amount"><br><br>
+        <input type="checkbox" name="" value=""> Confirm Your Donation
+        <br><br>
+        <button onclick="greeting()"type="button" class="donateBtn"name="button">DONATE</button>
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+    </section>
+    <!--Footer-->
+    <section class="footer">
+      <h4>The future of our wildlife is in our hands</h4>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+        <p>Made with <i class="fa fa-heart-o"></i> by Marmalade</p>
+      </div>
+
+
+        </section>
+
+
+
+<script>
+var amount1=Number(document.getElementById('1').value);
+var amount2=Number(document.getElementById('2').value);
+var amount3=Number(document.getElementById('3').value);
+var amount4=Number(document.getElementById('4').value);
+var amount5=Number(document.getElementById('5').value);
+var amount6=Number(document.getElementById('6').value);
+function input1(){
+  document.getElementById("myText").value=amount1;
+
+}
+function input2(){
+  document.getElementById("myText").value=amount2;
+
+}
+function input3(){
+  document.getElementById("myText").value=amount3;
+
+}
+function input4(){
+  document.getElementById("myText").value=amount4;
+
+}
+function input5(){
+  document.getElementById("myText").value=amount5;
+
+}
+function input6(){
+  document.getElementById("myText").value=amount6;
+
+}
+function greeting(){
+  alert("Thank You! Your donation meant a lot to us and wildlife");
+}
+
+</script>
+
+
+  </body>
+</html>
